@@ -2,22 +2,23 @@
 MHZ19 mhz(&Serial1);
 #include <Adafruit_NeoPixel.h>
 
-#define piezopin 9
 #define pixelpin 8
 #define serial_rx 7
 #define serial_tx 6
 #define spiezopin 5
+#define piezopin 4
 MHZ19_RESULT response;
 
-Adafruit_NeoPixel pixel(1, pixelpin, NEO_GRBW + NEO_KHZ800);
+#define nr_of_pixels 1
+Adafruit_NeoPixel pixel(nr_of_pixels, pixelpin, NEO_GRBW + NEO_KHZ800);
 
 void setup() {
   pixel.begin();
   pixel.clear();
-  pixel.setBrightness(150);
+  pixel.setBrightness(225);
   Serial.begin(115200);
   Serial1.begin(9600);
-  pixel.setPixelColor(0, pixel.Color(0, 0, 0, 100)); pixel.show();
+  pixel.fill(pixel.Color(0, 0, 0, 100)); pixel.show();
   chirp(HIGH);
   response = mhz.retrieveData();
 }
@@ -36,7 +37,7 @@ void loop() {
     // We take a reading every sec
     response = mhz.retrieveData();
     while (response != MHZ19_RESULT_OK) {
-      pixel.setPixelColor(0, pixel.Color(0, 0, 255)); pixel.show();
+      pixel.fill(pixel.Color(0, 0, 255)); pixel.show();
       delay(100);
       response = mhz.retrieveData();
     }
@@ -48,7 +49,7 @@ void loop() {
     int G = map(co2, 200, 2000, 255, 0);
     R = constrain(R, 0, 255);
     G = constrain(G, 0, 255);
-    pixel.setPixelColor(0, pixel.Color(R, G, 0)); pixel.show();
+    pixel.fill(pixel.Color(R, G, 0)); pixel.show();
 
     if (co2 > 1400) {
       //big alarm
