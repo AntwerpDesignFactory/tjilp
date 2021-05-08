@@ -1,5 +1,5 @@
 #include <MHZ19.h>
-MHZ19 mhz(&Serial1);
+MHZ19 mhz(&Serial1); // library can be found at: https://github.com/strange-v/MHZ19
 #include <Adafruit_NeoPixel.h>
 
 #define pixelpin 8
