@@ -10,7 +10,7 @@ MHZ19 mhz(&Serial1); // library can be found at: https://github.com/strange-v/MH
 MHZ19_RESULT response;
 
 #define nr_of_pixels 1
-Adafruit_NeoPixel pixel(nr_of_pixels, pixelpin, NEO_GRBW + NEO_KHZ800);
+Adafruit_NeoPixel pixel(nr_of_pixels, pixelpin, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   pixel.begin();
@@ -18,7 +18,7 @@ void setup() {
   pixel.setBrightness(225);
   Serial.begin(115200);
   Serial1.begin(9600);
-  pixel.fill(pixel.Color(0, 0, 0, 100)); pixel.show();
+  pixel.fill(pixel.Color(80, 80, 80)); pixel.show();
   chirp(HIGH);
   response = mhz.retrieveData();
 }
