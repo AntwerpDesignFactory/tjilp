@@ -24,6 +24,8 @@ Exact measurements can be obtained with a usb cable to a computer or with a usb-
 - In the schematics the usb socket is thus optional, as well as the resistor to the buzzer. Using this resistor you obtain two sound levels from the buzzer. Soft chirps and louder alarms. But you can also connect both to the buzzer without a resistor to have both in high volume. The value of the resistor is around 220 ohm in our device. But you may want a higher value to reduce the volume further.
 - To print the front cover, we provide two print files. First you print the logo part in a darker colour. Then you swap filament and print the cover over logo file with a transparent like filament over the logo. This is a hack method of doing multi-material prints on a regular Prusa.
 
+[![Tjilp demo video](https://img.youtube.com/vi/Ra5aq8gwuik/0.jpg)](https://www.youtube.com/watch?v=Ra5aq8gwuik)
+
 ## Notes!:
 ### Calibration: 
 The sensor calibrates itself whilst being operational. Thus you must leave the device powered at all times if possible. When you disconnect the power it will take at least 30min to recalibrate.
