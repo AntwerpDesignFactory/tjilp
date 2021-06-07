@@ -35,3 +35,21 @@ The actual cost of the components is about 35 euro’s and a powerbank that you 
 We have samples of our device in the field in kindergartens, secondary schools and our office at the university of Antwerp running day and night with good success. Placed next to a professional unit the measurements are really close and alarms well notable.
 ### Operame/ControlCO2:
 Other open solutions that we have seen are Operame and ControlCO2. They use a different processor and have a display. We chose for the rich interaction trough sound and thus used a smaller processor. The use is the same, the code is different and we preferred a solution without a custom PCB required.
+
+## Shopping list:
+Part|Price|Qtd.|Url
+---|---|---|---
+Xiao (main controller)|€ 6.5|1|https://www.tinytronics.nl/shop/nl/platforms/seeed-studio/seeed-studio-seeeduino-xiao-cortex-m0-samd21
+MH-Z19B (Co2 sensor)|€ 20.0|1|https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/winsen-mh-z19b-co2-sensor-met-kabel
+Passive Buzzer|€ 0.3|1|https://www.tinytronics.nl/shop/nl/audio/speakers/passieve-buzzer-3-12v-ac-2khz
+LED strip*|€ 12.0 of €0.2/st|1|https://www.tinytronics.nl/shop/nl/verlichting/led-strips/led-strips/ws2812b-digitale-5050-rgb-led-strip-60-leds-1m
+Usb poort|€ 0.5|1|https://www.tinytronics.nl/shop/nl/connectoren/usb/usb-a-connector-diy-male
+Diode|€ 0.1|1|https://www.tinytronics.nl/shop/nl/componenten/diode/diode-1n4007
+Weerstandje|€ 0.05|1|https://www.tinytronics.nl/shop/nl/componenten/weerstanden/220%CF%89-weerstand-(led-voorschakelweerstand)
+3D prints|€ 0.75|1|See print files in folders.
+Screws 3.0 x 10 mm**|€ 0.01|3|https://www.tinytronics.nl/shop/nl/prototyping/montagemateriaal/bout-m3-10mm-draad
+Total:| ±30 euro||
+
+*Only one led is required, but the minimal purchase is a strip of 60 led's.
+
+**Either use these M3 bolts x 10mm, or countersunk screws of the same size or use wood screws of 3.0 x 12mm.
