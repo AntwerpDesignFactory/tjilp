@@ -1,5 +1,8 @@
 # Tjilp
 
+Dutch version at the end of the page / Nederlandse uitleg onderaan de pagina.
+
+
 Tjilp is a device to visualise the air ventilation in a room with rich interaction.
 It does not show the value in boring values on a display but shows the quality with colour and sound.
 
@@ -37,9 +40,68 @@ The actual cost of the components is about 35 euro’s and a powerbank that you 
 We have samples of our device in the field in kindergartens, secondary schools and our office at the university of Antwerp running day and night with good success. Placed next to a professional unit the measurements are really close and alarms well notable.
 ### Operame/ControlCO2:
 Other open solutions that we have seen are Operame and ControlCO2. They use a different processor and have a display. We chose for the rich interaction trough sound and thus used a smaller processor. The use is the same, the code is different and we preferred a solution without a custom PCB required.
+### Can I request one from you or can I buy one:
+To our regret we cannot do this as we are a University and not allowed commercial ventures. Therefore we chose the open source approach and advice you to contact local fablabs and makerspaces to ask them if they could help you making one. All the information they need they can find on this github page.
+
 
 ## Shopping list:
 Part|Price|Qtd.|Url
+---|---|---|---
+Xiao (main controller)|€ 6.5|1|https://www.tinytronics.nl/shop/nl/platforms/seeed-studio/seeed-studio-seeeduino-xiao-cortex-m0-samd21
+MH-Z19B (Co2 sensor)|€ 20.0|1|https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/winsen-mh-z19b-co2-sensor-met-kabel
+Passive Buzzer|€ 0.3|1|https://www.tinytronics.nl/shop/nl/audio/speakers/passieve-buzzer-3-12v-ac-2khz
+LED strip*|€ 12.0 of €0.2/st|1|https://www.tinytronics.nl/shop/nl/verlichting/led-strips/led-strips/ws2812b-digitale-5050-rgb-led-strip-60-leds-1m
+Usb port|€ 0.5|1|https://www.tinytronics.nl/shop/nl/connectoren/usb/usb-a-connector-diy-male
+Diode|€ 0.1|1|https://www.tinytronics.nl/shop/nl/componenten/diode/diode-1n4007
+Resistor|€ 0.05|1|https://www.tinytronics.nl/shop/nl/componenten/weerstanden/220%CF%89-weerstand-(led-voorschakelweerstand)
+3D prints|€ 0.75|1|See print files in folders.
+Screws 3.0 x 10 mm**|€ 0.01|3|https://www.tinytronics.nl/shop/nl/prototyping/montagemateriaal/bout-m3-10mm-draad
+Total:| ±30 euro||
+
+*Only one led is required, but the minimal purchase is a strip of 60 led's.
+
+**Either use these M3 bolts x 10mm, or countersunk screws of the same size or use wood screws of 3.0 x 12mm.
+
+---
+
+# Tjilp
+
+Tjilp is een klein toestelletje dat de verluchting van een ruimte visualiseert door middel van rijke interactie. Het toont de meting dus niet in een saai getalletje maar geeft het aan via geluid en kleur.
+
+Het toestel is ontwikkeld met de koolmijnen in het achterhoofd. Daar namen de mijnwerkers een kanarievogel mee naar beneden om zo schadelijke gassen en een zuurstoftekort te meten. Als de vogels gek gingen doen of dood vielen wisten ze dat er een probleem was en ze best zo spoedig mogelijk gingen vluchten of ventileren. Tjilp gaat niet dood! Maar zal intens beginnen tjilpen en verkleuren als hij een probleem detecteert.
+
+Om de interactie luchtig te houden zal Tjilp ook op random momenten even tjilpen ter indicatie dat hij leeft zoals een echte vogel. Dus wees enkel gealarmeerd als hij intensief gaat tjilpen.
+
+Het ontwerp gebruikt:
+- Een heel kleine Seeed Xiao processor (een van de meest compacte Arduino compatibele modules).
+- Een MH-Z19b module (een behoorlijk accurate, goedkope en eenvoudig te gebruiken CO2 sensor).
+- Een Neopixel (ws2812b) om licht te geven.
+- Een piezo buzzer (actief of passief werken beiden, maar een passieve het beste).
+- Optioneel een usb poort om het toestel direct in een powerbank te pluggen.
+- Of via een usb-c kabel naar een powerbank, adapter of gsm of laptop.
+
+- Indien je opteert voor de versie met usb poort zal je die op zijn plaats moeten lijmen met smeltlijm. 
+- In het schema staat een weerstandje voorzien naar de buzzer. Hiermee krijgt Tjilp 2 geluidsvolumes. Indien je alleen maar luid volume wenst kan je ook beide uitgangen samen verbinden met de buzzer. De aangeraden 220 ohm weerstand is voor onze units de beste waarde gebleken. Maar deze kan hoger of lager gekozen worden om stiller dan wel luider volume te krijgen.
+- Om de cover te printen voorzien we 2 print files. Hiermee kan je het logo op de voorkant donkerder printen. Laad daarvoor eerst de donkere kleur in de printer. Print het logo. Wissel van filament naar de lichtere kleur. En print daarmee het 2de bestand over het logo heen. Doordat het logo slechts 0.2mm hoog is kan dit zonder problemen en dit is de goedkope manier om multi-material prints te doen op een gewone 3D printer.
+
+[![Tjilp demo video](https://img.youtube.com/vi/Ra5aq8gwuik/0.jpg)](https://www.youtube.com/watch?v=Ra5aq8gwuik)
+
+## Opmerkingen!:
+### Kalibratie:
+De sensor kalibreert zichzelf als hij actief is, maar heeft geen intern geheugen om die kalibratie op te slaan. Dus als je het toestel even uit de voeding haalt zal hij opnieuw gedurende een 30minuten moeten kalibreren alvorens de metingen terug accuraat zijn. Laat het toestel dan ook liefst altijd in steken met een stopcontact voeding of neem de sensor gedurende minstens een half uur mee buiten als je hem in een powerbank inplugt.
+### Plaatsing:
+De sensor werkt het beste als deze centraal in een kamer is geplaatst, maar niet te dicht bij ademende mensen. Zodoende adviseren we hem een meter van personen te plaatsen en niet plat tegen een muur of plat op tafel te leggen. Tjilp is gemaakt om op een powerbank te zitten en zodoende komt hij rechtop in het midden van een tafel te staan. 
+### Kostprijs:
+De effectieve kostprijs van alle onderdelen is een 35 euro en een powerbank die je wellicht al in huis hebt liggen (best wel een die niet in slaapstand valt).
+### Validatie:
+We hebben momenteel ter test toestellen in gebruik in een kleuterschool, middelbare school en onze lokalen in de Universiteit van Antwerpen die dag en nacht blijven meten met goed succes. Zelfs naast een professionele sensor geplaatst blijven de metingen zeer accuraat en de alarmen worden goed opgemerkt en opgevolgd door de gebruikers.
+### Operame/ControlCO2:
+We zijn niet de enige die deze problematiek hebben proberen aan te pakken. Ook de mensen van Operame en ControlCO2 hebben een ontwerp dat eerder wel gebaseerd is op een display en zonder de rijke interactie. Hun ontwerp is ook open source en heeft voor en nadelen. Er is een op maat gemaakte printplaat nodig bij hun. Maar zij bieden ze ook wel commercieel aan in beperkte mate https://controlco2.space/ voor meer info.
+### Kan ik er eentje laten maken/kopen bij jullie:
+Tot onze spijt is dit moeilijk aangezien we als Universiteit geen commerciële opdrachten kunnen uitvoeren. Zodoende kiezen we voor de open source kaart en raden we u aan bij lokale makerspaces of fablabs een te horen of zij interesse hebben om u daarbij te helpen. Alle nodige info kunnen zij vinden op deze github. 
+
+## Winkelmandje:
+Onderdeel|Prijs|Aantal.|Url
 ---|---|---|---
 Xiao (main controller)|€ 6.5|1|https://www.tinytronics.nl/shop/nl/platforms/seeed-studio/seeed-studio-seeeduino-xiao-cortex-m0-samd21
 MH-Z19B (Co2 sensor)|€ 20.0|1|https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/winsen-mh-z19b-co2-sensor-met-kabel
@@ -50,8 +112,8 @@ Diode|€ 0.1|1|https://www.tinytronics.nl/shop/nl/componenten/diode/diode-1n400
 Weerstandje|€ 0.05|1|https://www.tinytronics.nl/shop/nl/componenten/weerstanden/220%CF%89-weerstand-(led-voorschakelweerstand)
 3D prints|€ 0.75|1|See print files in folders.
 Screws 3.0 x 10 mm**|€ 0.01|3|https://www.tinytronics.nl/shop/nl/prototyping/montagemateriaal/bout-m3-10mm-draad
-Total:| ±30 euro||
+Totaal:| ±30 euro||
 
-*Only one led is required, but the minimal purchase is a strip of 60 led's.
+*Er is slechts één ledje nodig per toestel maar de minimale aankoop is een strip van 60 leds lang.
+**Gebruik ofwel deze M3 boutjes van 10mm lang, of verzonken exemplaren van vergelijkbare afmetingen of hout schroefjes van 3.0 x 12mm.
 
-**Either use these M3 bolts x 10mm, or countersunk screws of the same size or use wood screws of 3.0 x 12mm.
