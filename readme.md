@@ -117,3 +117,7 @@ Totaal:| ±30 euro||
 *Er is slechts één ledje nodig per toestel maar de minimale aankoop is een strip van 60 leds lang.
 **Gebruik ofwel deze M3 boutjes van 10mm lang, of verzonken exemplaren van vergelijkbare afmetingen of hout schroefjes van 3.0 x 12mm.
 
+# In de pers:
+- https://www.vrt.be/vrtnws/nl/2021/06/08/sensor-tjilpt-als-de-lucht-niet-voldoende-geventileerd-wordt/
+- https://www.gva.be/cnt/dmf20210608_94341156
+- https://www.uantwerpen.be/nl/overuantwerpen/faculteiten/ontwerpwetenschappen/nieuws-en-activiteiten/tsjilp-de-sensor/
