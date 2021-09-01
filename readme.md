@@ -13,6 +13,8 @@ Tjilp will not die, but tjilps vigorously when the air quality gets too bad.
 To keep the interaction fun, tjilp will also vocalise his presence at random moments, like a real bird.
 So only be alarmed when he goes into a frantic tjilping mode.
 
+![cover](https://user-images.githubusercontent.com/6534647/131702248-194a2dbb-77b2-4fdb-96d7-ddfe76f4da79.jpg)
+
 The design uses:
 - A very small Seeed Xiao processor (a compact Arduino compatible module).
 - An MH-Z19b module (a fairly precise and easy to use Arduino compatible co2 sensor).
@@ -62,6 +64,23 @@ Total:| ±30 euro||
 
 **Either use these M3 bolts x 10mm, or countersunk screws of the same size or use wood screws of 3.0 x 12mm.
 
+## How to assemble: 
+
+For this project we chose not to use a PCB. Simply because there are limited number of connections needed, the sensors come in various variations with slight changes to the dimensions and locations of the connections and since the orientation of the components would not be ideal when mounted on a single pcb. Thus, we advise the following work order: 
+- Use the cables provided with the sensor (this mostly is a 15cm long 7 strands of thin multicolored cable with connectors on both end). Cut off both end connectors and use the strands as needed (preferably using color coded logic). 
+- Place the components besides the housing in the same orientation and start making cable pieces of correct length for each connection. 
+- Start soldering the straight connections first. Like the data lines for the sensor and the signals to the LED and buzzer. 
+- Then make pieces of wire on each of the 5V and GND connections and make these all feed to the same spot in the open area of the device. Try to bend them such that they never flow over the led (this would cast a shadow) or over the middle of the xiao Arduino (a stud presses this down and with a cable pinched the device would not close). 
+- Twist together all the ends of the power cables and solder them together. Finish off with a shrink tube, hot melt, or tape to make a clean and safe result. 
+- Place the USB socket in the opening first and glue with ample amount of hot melt. Do make sure the connector sticks out of the device enough to work on your power bank. 
+- Insert all other components one by one. They should all fit snug and neatly. 
+- Finish off with the lid and three screws from the back. 
+
+## Reference pictures:
+<img src="https://user-images.githubusercontent.com/6534647/131698734-48b125e6-0f67-4ab8-ae22-60dff268212a.jpg" width="32%"/><img src="https://user-images.githubusercontent.com/6534647/131698731-bc93f0f8-0838-4f89-9529-d76fd470c070.jpg" width="32%"/><img src="https://user-images.githubusercontent.com/6534647/131698733-c50ef8f1-9049-4595-b80e-c4b5eaa49c54.JPG" width="32%"/>
+> Click them to see full resolution images
+
+
 ---
 
 # Tjilp
@@ -71,6 +90,8 @@ Tjilp is een klein toestelletje dat de verluchting van een ruimte visualiseert d
 Het toestel is ontwikkeld met de koolmijnen in het achterhoofd. Daar namen de mijnwerkers een kanarievogel mee naar beneden om zo schadelijke gassen en een zuurstoftekort te meten. Als de vogels gek gingen doen of dood vielen wisten ze dat er een probleem was en ze best zo spoedig mogelijk gingen vluchten of ventileren. Tjilp gaat niet dood! Maar zal intens beginnen tjilpen en verkleuren als hij een probleem detecteert.
 
 Om de interactie luchtig te houden zal Tjilp ook op random momenten even tjilpen ter indicatie dat hij leeft zoals een echte vogel. Dus wees enkel gealarmeerd als hij intensief gaat tjilpen.
+
+![cover](https://user-images.githubusercontent.com/6534647/131702248-194a2dbb-77b2-4fdb-96d7-ddfe76f4da79.jpg)
 
 Het ontwerp gebruikt:
 - Een heel kleine Seeed Xiao processor (een van de meest compacte Arduino compatibele modules).
@@ -116,6 +137,23 @@ Totaal:| ±30 euro||
 
 *Er is slechts één ledje nodig per toestel maar de minimale aankoop is een strip van 60 leds lang.
 **Gebruik ofwel deze M3 boutjes van 10mm lang, of verzonken exemplaren van vergelijkbare afmetingen of hout schroefjes van 3.0 x 12mm.
+
+## Hoe te assembleren: 
+
+Voor dit project hebben we gekozen geen PCB te gebruiken. Simpelweg omdat er maar een beperkt aantal verbindingen nodig zijn, de sensoren in vele varianten voorkomen die voornamelijk variaties hebben in de locatie van de aansluitingen en aangezien de oriëntatie van de componenten niet ideaal is als ze allemaal op één PCB moeten aansluiten. Wijzelf adviseren volgende werkwijze: 
+- Gebruik de kabels die meestal bij de sensor zijn geleverd (dit zijn normaal 15cm lange, meerdere kleuren, dunne kabeltjes met een connector aan beide einden). Knip de connectoren er af en gebruik de losse kabels zoals nodig (bij voorkeur enige kleurenlogica volgend). 
+- Plaats de componenten op je werktafel in eenzelfde oriëntatie als ze in het device zouden komen te zitten. Maak kabels voor alle verbindingen van correcte lengte (liever iets te lang dan te kort). 
+- Start met solderen aan de directe verbindingen. Bijvoorbeeld de datalijnen voor de sensor alsook de signalen voor de buzzer en led.  
+- Voorzie dan iedere 5V en GND-verbinding met een stukje kabel lang genoeg om tot in het open gedeelte van de behuizing te geraken. Liefst met een ordelijke route zodat geen enkele kabel over de led zal lopen (dit zou een schaduw creëren) alsook niet centraal over de Xiao Arduino aangezien daar eens steunpunt in het deksel zit om deze op zijn plaats te duwen.  
+- Tors de einden van alle 5V kabeltjes samen en soldeer. Hetzelfde met de GND-kabels. Werk af met een krimpkous, hot melt of een stukje tape voor de orde maar ook voor de elektrische veiligheid. 
+- Plaats de USB-poort in de opening en lijm vast met een voldoende hoeveelheid hot melt. Verzeker je ervan dat de stekker voldoende uit het device steekt zodat deze correct contact maakt met je powerbank. 
+- Plaats alle andere componenten nu één voor één in de behuizing. Alles zou mooi moeten passen zonder los te zitten. 
+- Plaats het deksel en schroef vast met de 3 schroefjes 
+
+## Referentie fotos:
+<img src="https://user-images.githubusercontent.com/6534647/131698734-48b125e6-0f67-4ab8-ae22-60dff268212a.jpg" width="32%"/><img src="https://user-images.githubusercontent.com/6534647/131698731-bc93f0f8-0838-4f89-9529-d76fd470c070.jpg" width="32%"/><img src="https://user-images.githubusercontent.com/6534647/131698733-c50ef8f1-9049-4595-b80e-c4b5eaa49c54.JPG" width="32%"/>
+> Klik om ze in volledige resolutie te bekijken
+
 
 # In de pers:
 - https://www.vrt.be/vrtnws/nl/2021/06/08/sensor-tjilpt-als-de-lucht-niet-voldoende-geventileerd-wordt/
