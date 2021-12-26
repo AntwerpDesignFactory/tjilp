@@ -49,7 +49,7 @@ To our regret we cannot do this as we are a University and not allowed commercia
 ## Shopping list:
 Part|Price|Qtd.|Url
 ---|---|---|---
-Xiao (main controller)|€ 6.5|1|https://www.tinytronics.nl/shop/nl/platforms/seeed-studio/seeed-studio-seeeduino-xiao-cortex-m0-samd21
+Xiao (main controller)|€ 6.5|1|https://www.tinytronics.nl/shop/nl/development-boards/microcontroller-boards/overige/seeed-studio-seeeduino-xiao-cortex-m0-samd21-losse-headers
 MH-Z19B (Co2 sensor)|€ 20.0|1|https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/winsen-mh-z19b-co2-sensor-met-kabel
 Passive Buzzer|€ 0.3|1|https://www.tinytronics.nl/shop/nl/audio/speakers/passieve-buzzer-3-12v-ac-2khz
 LED strip*|€ 12.0 of €0.2/st|1|https://www.tinytronics.nl/shop/nl/verlichting/led-strips/led-strips/ws2812b-digitale-5050-rgb-led-strip-60-leds-1m
@@ -124,7 +124,7 @@ Tot onze spijt is dit moeilijk aangezien we als Universiteit geen commerciële o
 ## Winkelmandje:
 Onderdeel|Prijs|Aantal.|Url
 ---|---|---|---
-Xiao (main controller)|€ 6.5|1|https://www.tinytronics.nl/shop/nl/platforms/seeed-studio/seeed-studio-seeeduino-xiao-cortex-m0-samd21
+Xiao (main controller)|€ 6.5|1|https://www.tinytronics.nl/shop/nl/development-boards/microcontroller-boards/overige/seeed-studio-seeeduino-xiao-cortex-m0-samd21-losse-headers
 MH-Z19B (Co2 sensor)|€ 20.0|1|https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/winsen-mh-z19b-co2-sensor-met-kabel
 Passive Buzzer|€ 0.3|1|https://www.tinytronics.nl/shop/nl/audio/speakers/passieve-buzzer-3-12v-ac-2khz
 LED strip*|€ 12.0 of €0.2/st|1|https://www.tinytronics.nl/shop/nl/verlichting/led-strips/led-strips/ws2812b-digitale-5050-rgb-led-strip-60-leds-1m
